@@ -8,10 +8,22 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow: hidden;
+}
+
 .wrapper {
   /* border: 2px solid red; */
-  width: 100vw;
   height: 100vh;
+}
+
+.alice-queen {
+  position: absolute;
+  top: 23%;
+  left: 22%;
+  height: 39rem;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .sky {
@@ -28,11 +40,64 @@ html {
   background-position-x: -100%;
   background-repeat: repeat-x;
 }
-
-.alice-queen {
+/* ############# background styling ##############  */
+.background {
   position: absolute;
-  top: 23%;
-  left: 22%;
-  height: 39rem;
-  overflow: hidden;
+  top: 0%;
+  left: 0%;
+  border: 2px solid red;
+  transform: translateX(118rem);
+  /* -380 rem max  118 rem min*/
+}
+
+.palm-1,
+.palm-2,
+.palm-3,
+.r-knight,
+.r-pawn,
+.r-pawn-upright,
+.w-rook,
+.w-rook-upright,
+.bush {
+  position: absolute;
+}
+
+.palm-1 {
+  top: 24rem;
+  left: 23rem;
+}
+.palm-2 {
+  top: 3rem;
+  left: 74rem;
+}
+.palm-3 {
+  top: 2rem;
+  left: 100rem;
+  z-index: 2;
+}
+.r-knight {
+  top: 10rem;
+  left: 156rem;
+}
+
+.r-pawn {
+  top: 37rem;
+  left: 191rem;
+}
+
+.r-pawn-upright {
+  top: 17rem;
+  left: 238rem;
+}
+.bush {
+  top: 52rem;
+  left: 188rem;
+}
+.w-rook {
+  top: 29rem;
+  left: 290rem;
+}
+.w-rook-upright {
+  top: 12rem;
+  left: 344rem;
 }
