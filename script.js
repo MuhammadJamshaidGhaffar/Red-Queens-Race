@@ -11,7 +11,7 @@ let aliceQueenMovement = aliceQueen.animate(
 let backgroundMovement = document
   .querySelector(".background")
   .animate(
-    [{ transform: "translateX(118rem)" }, { transform: "translateX(-380rem)" }],
+    [{ transform: "translateX(140rem)" }, { transform: "translateX(-380rem)" }],
     {
       duration: 15000,
       iterations: Infinity,
@@ -30,5 +30,15 @@ setInterval(() => {
   }
 }, 2000);
 
+// backgroundMovement.pause();
+
 document.addEventListener("click", moveFaster);
 document.addEventListener("touchstart", moveFaster);
+
+//-------- add raining clouds ------------------
+for (let i = 0; i < 5; i++) {
+  document.querySelector(".raining").innerHTML += `<img
+  src="https://media.giphy.com/media/j3EExPtEdN2tbJL79M/giphy.gif"
+  alt=""
+/>`;
+}

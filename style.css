@@ -27,27 +27,45 @@ body {
 }
 
 .sky {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_sky.jpg);
-  background-size: contain;
-  height: 50vh;
-  background-position-x: -100%;
-  background-repeat: repeat-x;
-}
-.earth {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_earth.jpg);
+  background: url("https://thumbs.dreamstime.com/b/overcast-cloudy-sky-slightly-blueish-95790814.jpg");
   background-size: cover;
   height: 50vh;
   background-position-x: -100%;
-  background-repeat: repeat-x;
+  /* background-repeat: repeat-x; */
+}
+.ground {
+  display: flex;
+  transform: translateX(-141rem);
+}
+.ground-2 {
+  width: 100rem;
+  transform: translateY(-12rem);
+}
+.raining {
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+.clouds {
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+.clouds .lightning-cloud {
+  width: 19rem;
+}
+.clouds .cloud {
+  width: 22rem;
+  height: 9rem;
 }
 /* ############# background styling ##############  */
 .background {
   position: absolute;
   top: 0%;
   left: 0%;
-  border: 2px solid red;
-  transform: translateX(118rem);
-  /* -380 rem max  118 rem min*/
+  /* border: 2px solid red; */
+  transform: translateX(140rem);
+  /* -380 rem max  140 rem min*/
 }
 
 .palm-1,
