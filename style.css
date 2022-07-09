@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  /* border: 2px solid red; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.sky {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_sky.jpg);
+  background-size: contain;
+  height: 50vh;
+  background-position-x: -100%;
+  background-repeat: repeat-x;
+}
+.earth {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_earth.jpg);
+  background-size: cover;
+  height: 50vh;
+  background-position-x: -100%;
+  background-repeat: repeat-x;
+}
+
+.alice-queen {
+  position: absolute;
+  top: 23%;
+  left: 22%;
+  height: 39rem;
+  overflow: hidden;
+}
